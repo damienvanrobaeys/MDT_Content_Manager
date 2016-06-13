@@ -1,0 +1,79 @@
+<Controls:MetroWindow 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="About" 
+        Width="400" 
+        Height="385"  
+        GlowBrush="{DynamicResource AccentColorBrush}"
+		ResizeMode="NoResize"
+		>
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Create Metro Style  -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Cobalt.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedTabControl.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <GroupBox Header="Tool informations" HorizontalAlignment="Left" Margin="0,0,0,0" Height="140" Background="DodgerBlue" FlowDirection="RightToLeft"  Width="350">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Name" Margin="4,0,0,0" Width="110"></Label>
+                        <Label Content="MDT Content Manager" Margin="4,0,0,0" Width="170"></Label>
+                    </StackPanel>
+								
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Version" Margin="4,0,0,0" Width="110"></Label>
+                        <Label Content="1.1" Margin="4,0,0,0" Width="170"></Label>
+                    </StackPanel>					
+				
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Last update" Margin="4,0,0,0" Width="110"></Label>
+                        <Label Content="02/26/2016" Margin="4,0,0,0" Width="170"></Label>
+                    </StackPanel>
+			
+                </StackPanel>
+            </GroupBox>	
+
+            <GroupBox Header="Author" HorizontalAlignment="Left" Margin="0,10,0,0" Height="180" Background="PaleTurquoise" FlowDirection="RightToLeft"  Width="350">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Name" Margin="4,0,0,0" Width="110"></Label>
+                        <Label Content="Damien VAN ROBAEYS" Margin="4,0,0,0" Width="170"></Label>
+                    </StackPanel>
+								
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Website" Margin="4,0,0,0" Width="110"></Label>
+						<Label><TextBlock><Hyperlink x:Name="Website" TargetName="_blank">SystAndDeploy.com</Hyperlink></TextBlock></Label>									
+                    </StackPanel>					
+				
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Facebook" Margin="4,0,0,0" Width="110"></Label>
+						<Label><TextBlock><Hyperlink x:Name="Facebook" TargetName="_blank">SystAndDeploy Facebook</Hyperlink></TextBlock></Label>															
+                    </StackPanel>
+					
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Mail" Margin="4,0,0,0" Width="110"></Label>
+						<Label><TextBlock><Hyperlink x:Name="Mail"  TargetName="_blank">damien.vanrobaeys@gmail.com</Hyperlink></TextBlock></Label>														
+                    </StackPanel>					
+			
+                </StackPanel>
+            </GroupBox>	
+
+			
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>

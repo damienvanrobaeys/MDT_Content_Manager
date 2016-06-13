@@ -1,0 +1,91 @@
+<Controls:MetroWindow 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Application Summary" 
+        Width="400" 
+        Height="440"  
+        GlowBrush="{DynamicResource AccentColorBrush}"
+		ResizeMode="NoResize"
+		>
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Create Metro Style  -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Cobalt.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedTabControl.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <GroupBox Header="Application Details" HorizontalAlignment="Left" Margin="0,0,0,0" Height="385" Background="DodgerBlue" FlowDirection="RightToLeft"  Width="350">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Application Name" Margin="4,0,0,0" Width="110"></Label>
+                        <Label x:Name="Appli_Name_Resume" Margin="4,0,0,0" Width="110"></Label>						
+                    </StackPanel>
+								
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Comments" Margin="4,0,0,0" Width="110"></Label>
+                        <Label x:Name="Appli_Comments_Resume" Margin="4,0,0,0" Width="110"></Label>						
+                    </StackPanel>					
+				
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Publisher" Margin="4,0,0,0" Width="110"></Label>
+                        <Label x:Name="Appli_Publisher_Resume" Margin="4,0,0,0" Width="110"></Label>						
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Version" Margin="4,0,0,0" Width="110"></Label>
+                        <Label x:Name="Appli_Version_Resume" Margin="4,0,0,0" Width="110"></Label>						
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Language" Margin="4,0,0,0" Width="110"></Label>
+                        <Label x:Name="Appli_Language_Resume" Margin="4,0,0,0" Width="110"></Label>
+                    </StackPanel>
+					
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Source" Margin="4,0,0,0" Width="110"></Label>
+                        <Label x:Name="Appli_Source_Resume" Margin="4,0,0,0" Width="250"></Label>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Folder name" Margin="4,0,0,0" Width="110"></Label>
+                        <Label x:Name="Appli_Folder_Resume" Margin="4,0,0,0" Width="110"></Label>						
+                    </StackPanel>					
+
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="CommandLine" Margin="4,0,0,0" Width="110"></Label>
+                        <Label x:Name="Appli_CMD_Resume" Margin="4,0,0,0" Width="110"></Label> 
+					</StackPanel>			
+					
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Hide Status" Margin="4,0,0,0" Width="110"></Label>
+						<Label x:Name="Appli_Hide_Resume" Margin="4,0,0,0" Width="110"></Label>
+                    </StackPanel>		
+
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Enable Status" Margin="4,0,0,0" Width="110"></Label>
+                        <Label x:Name="Appli_Enable_Resume" Margin="4,0,0,0" Width="110"></Label>						
+                    </StackPanel>		
+
+                    <StackPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="0,5,0,0" HorizontalAlignment="Right">
+                        <Label Content="Reboot Status" Margin="4,0,0,0" Width="110"></Label>
+                        <Label x:Name="Applica_Reboot_Resume" Margin="4,0,0,0" Width="110"></Label>						
+                    </StackPanel>											
+                </StackPanel>
+            </GroupBox>				
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>
